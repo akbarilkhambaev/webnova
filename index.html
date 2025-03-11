@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="particles-js"></div>
+      <div class="container align-items-center pt-4">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#index.html">
+              <img
+                class="main_logo"
+                src="img/logos/black white Thunder logo.png"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="col-lg-4 offset"></div>
+          <div class="col-lg-5">
+            <ul>
+              <li>
+                <a href="#service">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/jectmwqf.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#40E0D0"
+                    style="width: 25px; height: 25px"
+                  >
+                  </lord-icon>
+                  <span>Услуги</span></a
+                >
+              </li>
+              <li>
+                <a href="#works">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/bomiazxt.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#40E0D0"
+                    style="width: 25px; height: 25px"
+                  >
+                  </lord-icon
+                  ><span>Наши работы</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/ytklkgsc.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#40E0D0"
+                    style="width: 25px; height: 25px"
+                  >
+                  </lord-icon
+                  ><span>Прайс</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/tyounuzx.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#40E0D0"
+                    style="width: 25px; height: 25px"
+                  >
+                  </lord-icon
+                  ><span> О нас </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container pt-5"
+        style="padding-top: 120px !important"
+      >
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="typewriter">
+              <span id="typewriter-text"></span>
+              <span id="insert"></span>
+            </p>
+          </div>
+          <div class="col-lg-1 offset"></div>
+          <div class="col-lg-5 position-relative">
+            <div class="lottie">
+              <dotlottie-player
+                src="https://lottie.host/ad3858c3-c0f0-4ebe-bccd-3aa1d553fdcc/FSoVE131uM.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="service"
+      id="service"
+    >
+      <div class="container">
+        <h2
+          id="service"
+          class="pb-5"
+        >
+          НАШИ УСЛУГИ
+        </h2>
+        <div class="row">
+          <div class="col-lg-3 service_card animate__animated column-1">
+            <div class="service_img">
+              <img
+                src="img/icons/web-sites.png"
+                alt=""
+              />
+            </div>
+            <h3>Создание веб сайтов</h3>
+            <p>
+              От разработки структуры и дизайна до полной функциональности,
+              адаптированной под ваши задачи и потребности.
+            </p>
+            <div class="service_tags">
+              <span>#Promo page</span>
+              <span>#Сайт-визитка</span>
+              <span>#Landing page</span>
+              <span>#Корпоративные сайты</span>
+            </div>
+          </div>
+          <div class="col-lg-3 service_card animate__animated column-2">
+            <div class="service_img">
+              <img
+                src="img/icons/mobile-apps.png"
+                alt=""
+              />
+            </div>
+            <h3>Создание мобильных приложений</h3>
+            <p>
+              Разработка мобильных приложений под iOS и Android с удобным
+              интерфейсом и высокой производительностью. Полная адаптация под
+              ваши задачи и потребности.
+            </p>
+            <div class="service_tags">
+              <span>#iOS</span>
+              <span>#Android</span>
+              <span>#UX/UI</span>
+              <span>#Mobileapps</span>
+            </div>
+          </div>
+          <div class="col-lg-3 service_card animate__animated column-3">
+            <div class="service_img">
+              <img
+                src="img/icons/telegram.png"
+                alt=""
+              />
+            </div>
+            <h3>Создание телеграм ботов</h3>
+            <p>
+              Разработка телеграм-ботов для автоматизации процессов, обработки
+              запросов и взаимодействия с аудиторией. Подходит для бизнеса и
+              личных нужд.
+            </p>
+            <div class="service_tags">
+              <span>#ТелеграмБоты</span>
+              <span>#ЧатБоты</span>
+              <span>#Автоматизация</span>
+              <span>#Поддержка</span>
+            </div>
+          </div>
+          <div class="col-lg-3 service_card animate__animated column-4">
+            <div class="service_img">
+              <img
+                src="img/icons/web-magazines.png"
+                alt=""
+              />
+            </div>
+            <h3>Создание онлайн-магазинов</h3>
+            <p>
+              Проектирование и запуск онлайн-магазинов с удобной навигацией,
+              интеграцией платёжных систем и адаптацией под мобильные
+              устройства.
+            </p>
+            <div class="service_tags">
+              <span>#ОнлайнМагазин</span>
+              <span>#ECommerce</span>
+              <span>#АдаптивныйДизайн</span>
+              <span>#Продажи</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how_it_works">
+      <h2>Как мы работаем :</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 timeline">
+            <ul>
+              <li class="li_active">> Анализ</li>
+              <li>> Планирование</li>
+              <li>> Дизайн</li>
+              <li>> Разработка</li>
+              <li>> Тестирование</li>
+              <li>> Запуск</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 show_content">
+            <ul>
+              <li class="active">
+                <h3>Анализ</h3>
+                <p>
+                  Анализ проекта и составление первичной оценки задач и сроков.
+                </p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/ab78e1f6-f217-4eb0-b2b7-d29ecc541cfe/FETYiw9JLB.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+              <li>
+                <h3>Планирование</h3>
+                <p>Разработка подробного плана для реализации проекта.</p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/342ce559-b266-4bbf-bc32-2a2bbc49bea2/GDS37QC9Ej.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+              <li>
+                <h3>Дизайн</h3>
+                <p>
+                  Создание дизайна для визуализации ключевых функций проекта.
+                </p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/fce4f248-e7e9-4ca5-9851-b5c339891214/JHDpgdSGkW.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+              <li>
+                <h3>Разработка</h3>
+                <p>
+                  Реализация функционала проекта согласно техническому заданию.
+                </p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/351df33e-0493-4c0c-8725-3bcfcd5671b1/JHGkQLOc9M.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+              <li>
+                <h3>Тестирование</h3>
+                <p>Проверка и тестирование всех функций проекта.</p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/7ab269f4-e926-4a05-9ad4-b4cd3089415c/QxAZN59IRL.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+              <li>
+                <h3>Запуск</h3>
+                <p>Запуск проекта и передача его заказчику.</p>
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/85c95472-ea8d-4f28-8f9e-750285d8c837/sOSxr7gALS.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 300px"
+                  loop
+                  autoplay
+                  class="lottie_animation"
+                ></dotlottie-player>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <h2
+          id="works"
+          class="pb-5"
+        >
+          НАШИ РАБОТЫ
+        </h2>
+        <div class="row">
+          <div class="col-lg-4 works_p">
+            <h3>Система менежмента</h3>
+
+            <div class="works_img">
+              <img
+                src="img/works/template.png"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-element">
+              <p>
+                Система менежмента для управления проектами и задачами. Включает
+                в себя функции для планирования, контроля и анализа проектов.
+              </p>
+              <a href="#more"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 works_p">
+            <h3>Система управления</h3>
+
+            <div class="works_img">
+              <img
+                src="img/works/teplate_2.png"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-element">
+              <p>
+                Веб-приложение для эффективного управления компанией,
+                позволяющее оптимизировать бизнес-процессы, координировать
+                команды и отслеживать ключевые показатели в реальном времени.
+              </p>
+              <a href="#more"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 works_p">
+            <h3>Система Контроля Продукции</h3>
+
+            <div class="works_img">
+              <img
+                src="img/works/teplate_3.png"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-element">
+              <p>
+                Контроль продукции – система для управления производственными
+                процессами, отслеживания состояния товаров и оптимизации их
+                учета.
+              </p>
+              <a href="#more"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 works_p">
+            <h3>Онлайн-магазин</h3>
+
+            <div class="works_img">
+              <img
+                src="img/works/template_2.png"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-element">
+              <p>
+                Платформа для удобной покупки товаров и услуг через интернет с
+                доставкой на дом.
+              </p>
+              <a href="#more"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- //менежмент система, кастомер сервис, post системы , онлайн-магазинов -->
