@@ -61,4 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = {
+    name: document.getElementById('name').value,
+    phone: document.getElementById('phone').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  console.log(formData);
+
+  alert('Ваше сообщение отправлено!');
+
+  e.target.reset();
+});
+      
 
