@@ -14,8 +14,8 @@ body {
     position: relative;
 }
 h2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat';
