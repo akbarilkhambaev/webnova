@@ -67,15 +67,13 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#feedback">
                   <lord-icon
-                    src="https://cdn.lordicon.com/ytklkgsc.json"
-                    trigger="hover"
-                    colors="primary:#ffffff,secondary:#40E0D0"
-                    style="width: 25px; height: 25px"
-                  >
-                  </lord-icon
-                  ><span>Прайс</span>
+                   src="https://cdn.lordicon.com/fozsorqm.json"
+                   trigger="hover"
+                   colors="primary:#ffffff,secondary:#40E0D0"
+                   style="width:25px;height:25px">
+                  </lord-icon><span >Связаться с нами</span>
                 </a>
               </li>
               <li>
@@ -449,32 +447,34 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <h2 class="text-center mb-4">Обратная связь</h2>
      <div class="container">
   <form id="contact-form" class="feedback-form">
-
-    <div class="mb-3">
-      <label for="name" class="form-label text-white">Имя:</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+    <div class="mb-3 col-lg-4 col-sm-12">
+      <label for="name" class="form-label text-white ">Имя:</label>
+      <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Ваше имя" required>
     </div>
 
-    <div class="mb-3">
+    <div class="mb-3 col-lg-4 col-sm-12">
       <label for="phone" class="form-label text-white">Телефон:</label>
-      <input type="tel" class="form-control" id="phone" name="phone" placeholder="+998 (99) 123-45-67" required>
+      <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="+998 (99) 123-45-67" required>
     </div>
 
-    <div class="mb-3">
+    <div class="mb-3 col-lg-4 col-sm-12 ">
       <label for="email" class="form-label text-white">Email:</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="example@mail.com" required>
+      <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="example@mail.com" required>
     </div>
 
-    <div class="mb-3">
-      <label for="message" class="form-label text-white">Сообщение:</label>
-      <textarea class="form-control" id="message" name="message" placeholder="Ваше сообщение" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-dark w-100">Отправить</button>
+  </div>
+  <button type="submit" class="btn btn-dark btn-lg w-100 mt-3 fb_btn">УЗНАТЬ ЦЕНЫ</button>
+    
+        </div>
+      </div>
+    
   </form>
 </div>
 

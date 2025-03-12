@@ -37,6 +37,23 @@ section {
     margin-bottom: 50px !important;
  }
 
+input, textarea {
+    border-radius: 0 !important;
+    background : none !important;
+    border-left: 3px solid #40E0D0 !important;
+    border-right: 0px solid #40E0D0 !important; 
+    border-top: 0px solid #40E0D0 !important;
+    border-bottom: 3px solid #40E0D0 !important;   
+    border-bottom-left-radius: 15px !important;
+    color: #fff !important;
+    font-family: 'Manrope'; 
+    
+}
+input::placeholder, textarea::placeholder {
+    color: #ccc !important;
+    font-family: 'Manrope'; 
+    font-size: 14px;
+}
 header {
     width: 100%;
     height: 690px;
@@ -101,7 +118,7 @@ header ul li a {
     text-decoration: none;
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     gap: 7px;
@@ -477,4 +494,11 @@ dotlottie-player.lottie_animation {
 .works_p:hover .bg-element {
     opacity: 1;
     height: 100%;
+}
+
+.fb_btn {
+    border-radius: 0px !important;
+}
+.feedback-form label {
+    padding-left: 15px !important;
 }
