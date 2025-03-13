@@ -78,4 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   e.target.reset();
 });
       
+document.getElementById("scrollToTop").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
 

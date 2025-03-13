@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 
     <title>WEBNOVA</title>
@@ -28,72 +29,76 @@
   <body>
     <div id="particles-js"></div>
     <header>
-      <div class="container align-items-center pt-4">
-        <div class="row">
-          <div class="col-lg-3">
+      <div class="container container-sm-fluid align-items-center pt-4">
+    <div class="row align-items-center justify-content-between">
+        <!-- Логотип -->
+        <div class="col-lg-3 col-6">
             <a href="#index.html">
-              <img
-                class="main_logo"
-                src="img/logos/black white Thunder logo.png"
-                alt="logo"
-              />
+                <img class="main_logo" src="img/logos/black white Thunder logo.png" alt="logo" />
             </a>
-          </div>
-          <div class="col-lg-4 offset"></div>
-          <div class="col-lg-5">
-            <ul>
-              <li>
-                <a href="#service">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/jectmwqf.json"
-                    trigger="hover"
-                    colors="primary:#ffffff,secondary:#40E0D0"
-                    style="width: 25px; height: 25px"
-                  >
-                  </lord-icon>
-                  <span>Услуги</span></a
-                >
-              </li>
-              <li>
-                <a href="#works">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/bomiazxt.json"
-                    trigger="hover"
-                    colors="primary:#ffffff,secondary:#40E0D0"
-                    style="width: 25px; height: 25px"
-                  >
-                  </lord-icon
-                  ><span>Наши работы</span>
-                </a>
-              </li>
-              <li>
-                <a href="#feedback">
-                  <lord-icon
-                   src="https://cdn.lordicon.com/fozsorqm.json"
-                   trigger="hover"
-                   colors="primary:#ffffff,secondary:#40E0D0"
-                   style="width:25px;height:25px">
-                  </lord-icon><span >Связаться с нами</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+
+        <!-- Кнопка-бургер (только на маленьких экранах) -->
+        <div class="col-6 d-lg-none text-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars text-white fs-3"></i>
+            </button>
+        </div>
+
+        <!-- Навигация -->
+        <div class="col-lg-6">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                        <ul class="navbar-nav d-flex align-items-center gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link text-white d-flex align-items-center gap-2" href="#service">
+                                    <lord-icon src="https://cdn.lordicon.com/jectmwqf.json" trigger="hover"
+                                        colors="primary:#ffffff,secondary:#40E0D0" style="width: 25px; height: 25px">
+                                    </lord-icon>
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white d-flex align-items-center gap-2" href="#works">
+                                    <lord-icon src="https://cdn.lordicon.com/bomiazxt.json" trigger="hover"
+                                        colors="primary:#ffffff,secondary:#40E0D0" style="width: 25px; height: 25px">
+                                    </lord-icon>
+                                    Наши работы
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white d-flex align-items-center gap-2" href="#feedback">
+                                    <lord-icon src="https://cdn.lordicon.com/fozsorqm.json" trigger="hover"
+                                        colors="primary:#ffffff,secondary:#40E0D0" style="width: 25px; height: 25px">
+                                    </lord-icon>
+                                    Связаться с нами
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
 
       <div
         class="container pt-5"
         style="padding-top: 120px !important"
       >
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sm-12">
             <p class="typewriter">
               <span id="typewriter-text"></span>
               <span id="insert"></span>
             </p>
           </div>
           <div class="col-lg-1 offset"></div>
-          <div class="col-lg-5 position-relative">
+          <div class="col-lg-5 position-relative d-none d-md-block">
             <div class="lottie">
               <dotlottie-player
                 src="https://lottie.host/ad3858c3-c0f0-4ebe-bccd-3aa1d553fdcc/FSoVE131uM.lottie"
@@ -467,6 +472,36 @@
 </div>
 
     </section>
+
+   <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+            <!-- Логотип -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="img/logos/black white Thunder logo.png" alt="Webnovas Logo" class="footer-logo">
+            </div>
+
+            <!-- Контакты -->
+            <div class="col-md-4 justify-content-center d-flex">
+                <a href="mailto:info@webnovas.uz" class="text-white me-4 text-decoration-none">
+                    <i class="fas fa-envelope"></i> info@webnovas.uz
+                </a>
+                <a href="https://t.me/webnovas" target="_blank" class="text-white text-decoration-none">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+            </div>
+
+            <!-- Кнопка "Наверх" -->
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <button id="scrollToTop" class="btn btn-outline-light">
+                    <i class="fas fa-arrow-up"></i> Наверх
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
