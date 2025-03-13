@@ -68,6 +68,7 @@ document.getElementById("scrollToTop").addEventListener("click", () => {
 });
 
 
+const API_URL = "https://webnova-9sru.onrender.com/send"; // URL вашего сервера
 
 document.getElementById("contact-form").addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -79,7 +80,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     };
 
     try {
-        const response = await fetch("http://127.0.0.1:5500", {
+        const response = await fetch(API_URL, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -94,3 +95,4 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         alert("Ошибка! Попробуйте позже.");
     }
 });
+
