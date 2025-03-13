@@ -7,8 +7,15 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Настройка CORS (разрешаем все домены)
-app.use(cors({ origin: "*" }));
+// Настройка CORS (разрешаем только webnovas.uz)
+app.use(cors({
+    origin: "http://webnovas.uz",
+    methods: "POST",
+    allowedHeaders: "Content-Type"
+}));
+
+// Разрешаем preflight-запросы CORS
+app.options("*", cors());
 
 // Разрешаем парсинг JSON
 app.use(bodyParser.json());
@@ -27,11 +34,8 @@ const transporter = nodemailer.createTransport({
 
 // Обработка POST-запроса
 app.post("/send", async (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*"); // Разрешаем CORS
-    res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS"); // Разрешаем методы
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Разрешаем заголовки
-
     const { name, phone, email } = req.body;
+
     if (!name || !phone || !email) {
         return res.status(400).json({ message: "Заполните все поля" });
     }
