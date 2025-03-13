@@ -61,24 +61,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
 
-  const formData = {
-    name: document.getElementById('name').value,
-    phone: document.getElementById('phone').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value,
-  };
-
-  console.log(formData);
-
-  alert('Ваше сообщение отправлено!');
-
-  e.target.reset();
-});
       
 document.getElementById("scrollToTop").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+
+
+document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value
+    };
+
+    try {
+        const response = await fetch("http://127.0.0.1:5500", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+        alert(result.message);
+        if (response.ok) this.reset();
+    } catch (error) {
+        alert("Ошибка! Попробуйте позже.");
+    }
+});
