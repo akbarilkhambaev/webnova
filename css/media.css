@@ -1,0 +1,57 @@
+@media (max-width: 575.98px) {
+    .service .col-sm-12 {
+    width: 95%;
+    margin: 0 auto 50px;
+}
+.service h2, .works h2, .about h2, .contact h2, .how_it_works h2, .feedback h2 {
+    color: #fff;
+    font-size: 40px !important;
+    font-weight: bold;
+    padding-left:0 !important;
+    text-align: center;
+    text-transform: uppercase;
+     text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.5);
+}
+.timeline ul {
+    width: 95%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding-left: 0;
+    margin: 0 auto; 
+    
+}
+.timeline ul li {
+    height: 30px;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: aliceblue;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: 0.2s ease;
+    position: relative;
+    text-transform: uppercase;
+}
+.show_content ul {
+    padding-left: 0;
+}
+
+.col-lg-4.works_p {
+    width: 95%;
+    height: 402px;
+    background: #383838;
+    padding: 15px;
+    z-index: 1; 
+    position: relative; 
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    margin: 0 auto;
+}
+}
