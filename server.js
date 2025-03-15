@@ -1,21 +1,21 @@
 // server.js
-const express = require("express");
-const fetch = require("node-fetch"); // Если используете Node.js < 18
-const bodyParser = require("body-parser");
-require("dotenv").config(); // Чтобы считывать токен из .env
+const express = require('express');
+const fetch = require('node-fetch'); // Если используете Node.js < 18
+const bodyParser = require('body-parser');
+require('dotenv').config(); // Чтобы считывать токен из .env
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Эти переменные можете хранить в .env
 const BOT_TOKEN = process.env.BOT_TOKEN; // "123456789:ABCDef..."
-const CHAT_ID = process.env.CHAT_ID;     // "123456789" или "-10012123123" для каналов
+const CHAT_ID = process.env.CHAT_ID; // "123456789" или "-10012123123" для каналов
 
-app.use(express.static("")); // или куда выложены ваши статические файлы
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // При отправке формы POST на /send -> шлём запрос к Telegram
-app.post("/send", async (req, res) => {
+app.post('/send', async (req, res) => {
   try {
     const { name, phone, email } = req.body;
     const text = `New request from site:
@@ -28,13 +28,13 @@ app.post("/send", async (req, res) => {
     const params = {
       chat_id: CHAT_ID,
       text: text,
-      parse_mode: "HTML",
+      parse_mode: 'HTML',
     };
 
     // Отправляем POST-запрос к Telegram
     const tgRes = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(params),
     });
 
@@ -43,10 +43,10 @@ app.post("/send", async (req, res) => {
     }
 
     // Успех
-    res.status(200).send("OK");
+    res.status(200).send('OK');
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error sending Telegram message");
+    res.status(500).send('Error sending Telegram message');
   }
 });
 
