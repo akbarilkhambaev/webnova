@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 3000;
 const BOT_TOKEN = process.env.BOT_TOKEN; // "123456789:ABCDef..."
 const CHAT_ID = process.env.CHAT_ID; // "123456789" или "-10012123123" для каналов
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // При отправке формы POST на /send -> шлём запрос к Telegram
