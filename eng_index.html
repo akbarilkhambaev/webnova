@@ -36,7 +36,7 @@
         pointer-events: none;
       }
       .dropdown-menu {
-        z-index: 9999; /* достаточно, чтобы было поверх .lottie */
+        z-index: 9999; /* High enough to be above .lottie */
       }
     </style>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
@@ -48,7 +48,7 @@
     <header>
       <div class="container container-sm-fluid align-items-center pt-4">
         <div class="row align-items-center justify-content-between">
-          <!-- Логотип -->
+          <!-- Logo -->
           <div class="col-lg-3 col-6">
             <a href="index.html">
               <img
@@ -59,7 +59,7 @@
             </a>
           </div>
 
-          <!-- Кнопка-бургер (только на маленьких экранах) -->
+          <!-- Burger button (small screens) -->
           <div class="col-6 d-lg-none text-end">
             <button
               class="navbar-toggler"
@@ -74,7 +74,7 @@
             </button>
           </div>
 
-          <!-- Навигация -->
+          <!-- Navigation -->
           <div class="col-lg-8">
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
@@ -94,7 +94,7 @@
                           colors="primary:#ffffff,secondary:#40E0D0"
                           style="width: 25px; height: 25px"
                         ></lord-icon>
-                        Услуги
+                        Services
                       </a>
                     </li>
                     <li class="nav-item">
@@ -108,7 +108,7 @@
                           colors="primary:#ffffff,secondary:#40E0D0"
                           style="width: 25px; height: 25px"
                         ></lord-icon>
-                        Наши работы
+                        Our Works
                       </a>
                     </li>
                     <li class="nav-item">
@@ -122,10 +122,10 @@
                           colors="primary:#ffffff,secondary:#40E0D0"
                           style="width: 25px; height: 25px"
                         ></lord-icon>
-                        Связаться с нами
+                        Contact Us
                       </a>
                     </li>
-                    <!-- Dropdown для выбора языка -->
+                    <!-- Dropdown for language selection -->
                     <li class="nav-item dropdown">
                       <a
                         class="nav-link dropdown-toggle text-white d-flex align-items-center gap-2"
@@ -141,7 +141,7 @@
                           colors="primary:#ffffff,secondary:#40E0D0"
                           style="width: 25px; height: 25px"
                         ></lord-icon>
-                        <span id="selectedLanguage">Русский</span>
+                        <span id="selectedLanguage">English</span>
                       </a>
                       <ul
                         class="dropdown-menu dropdown-menu-end"
@@ -153,7 +153,7 @@
                             class="dropdown-item"
                             href="index.html"
                           >
-                            Русский
+                            Russian
                           </a>
                         </li>
                         <li>
@@ -174,7 +174,7 @@
         </div>
       </div>
 
-      <!-- Пример содержимого под шапкой (typewriter + лотти) -->
+      <!-- Example content under the header (typewriter + Lottie) -->
       <div
         class="container pt-5"
         style="padding-top: 120px !important ; z-index: -10"
@@ -182,8 +182,8 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12">
             <p class="typewriter">
-              <span id="typewriter-text"></span>
-              <span id="insert"></span>
+              <span id="typewriter-text2"></span>
+              <span id="insert2"></span>
             </p>
           </div>
           <div class="col-lg-1 offset"></div>
@@ -214,7 +214,7 @@
           id="service"
           class="pb-5"
         >
-          НАШИ УСЛУГИ
+          OUR SERVICES
         </h2>
         <div class="row">
           <div
@@ -226,16 +226,16 @@
                 alt=""
               />
             </div>
-            <h3>Создание веб сайтов</h3>
+            <h3>Website Development</h3>
             <p>
-              От разработки структуры и дизайна до полной функциональности,
-              адаптированной под ваши задачи и потребности.
+              From planning structure and design to delivering full
+              functionality tailored to your needs and requirements.
             </p>
             <div class="service_tags">
               <span>#Promo page</span>
-              <span>#Сайт-визитка</span>
+              <span>#Business card site</span>
               <span>#Landing page</span>
-              <span>#Корпоративные сайты</span>
+              <span>#Corporate websites</span>
             </div>
           </div>
           <div
@@ -247,11 +247,10 @@
                 alt=""
               />
             </div>
-            <h3>Создание мобильных приложений</h3>
+            <h3>Mobile App Development</h3>
             <p>
-              Разработка мобильных приложений под iOS и Android с удобным
-              интерфейсом и высокой производительностью. Полная адаптация под
-              ваши задачи и потребности.
+              Building mobile apps for iOS and Android with a user-friendly
+              interface and high performance. Fully adapted to your needs.
             </p>
             <div class="service_tags">
               <span>#iOS</span>
@@ -269,17 +268,17 @@
                 alt=""
               />
             </div>
-            <h3>Создание телеграм ботов</h3>
+            <h3>Telegram Bot Development</h3>
             <p>
-              Разработка телеграм-ботов для автоматизации процессов, обработки
-              запросов и взаимодействия с аудиторией. Подходит для бизнеса и
-              личных нужд.
+              Creating Telegram bots for process automation, handling requests,
+              and interacting with users. Suitable for business or personal
+              needs.
             </p>
             <div class="service_tags">
-              <span>#ТелеграмБоты</span>
-              <span>#ЧатБоты</span>
-              <span>#Автоматизация</span>
-              <span>#Поддержка</span>
+              <span>#TelegramBots</span>
+              <span>#ChatBots</span>
+              <span>#Automation</span>
+              <span>#Support</span>
             </div>
           </div>
           <div
@@ -291,42 +290,42 @@
                 alt=""
               />
             </div>
-            <h3>Создание онлайн-магазинов</h3>
+            <h3>Online Store Development</h3>
             <p>
-              Проектирование и запуск онлайн-магазинов с удобной навигацией,
-              интеграцией платёжных систем и адаптацией под мобильные
-              устройства.
+              Design and launch of online stores with convenient navigation,
+              payment system integration, and mobile adaptability.
             </p>
             <div class="service_tags">
-              <span>#ОнлайнМагазин</span>
+              <span>#OnlineStore</span>
               <span>#ECommerce</span>
-              <span>#АдаптивныйДизайн</span>
-              <span>#Продажи</span>
+              <span>#ResponsiveDesign</span>
+              <span>#Sales</span>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="how_it_works">
-      <h2>Как мы работаем :</h2>
+      <h2>How We Work :</h2>
       <div class="container container-sm-fluid">
         <div class="row">
           <div class="col-lg-6 col-sm-12 timeline">
             <ul>
-              <li class="li_active">> Анализ</li>
-              <li>> Планирование</li>
-              <li>> Дизайн</li>
-              <li>> Разработка</li>
-              <li>> Тестирование</li>
-              <li>> Запуск</li>
+              <li class="li_active">> Analysis</li>
+              <li>> Planning</li>
+              <li>> Design</li>
+              <li>> Development</li>
+              <li>> Testing</li>
+              <li>> Launch</li>
             </ul>
           </div>
           <div class="col-lg-6 col-sm-12 show_content">
             <ul>
               <li class="active">
-                <h3>Анализ</h3>
+                <h3>Analysis</h3>
                 <p>
-                  Анализ проекта и составление первичной оценки задач и сроков.
+                  We analyze the project and create an initial estimate of tasks
+                  and timelines.
                 </p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
@@ -343,8 +342,10 @@
                 ></dotlottie-player>
               </li>
               <li>
-                <h3>Планирование</h3>
-                <p>Разработка подробного плана для реализации проекта.</p>
+                <h3>Planning</h3>
+                <p>
+                  We develop a detailed plan for the project implementation.
+                </p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
                   type="module"
@@ -360,9 +361,10 @@
                 ></dotlottie-player>
               </li>
               <li>
-                <h3>Дизайн</h3>
+                <h3>Design</h3>
                 <p>
-                  Создание дизайна для визуализации ключевых функций проекта.
+                  Creating a design to visualize the key functions of the
+                  project.
                 </p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
@@ -379,9 +381,10 @@
                 ></dotlottie-player>
               </li>
               <li>
-                <h3>Разработка</h3>
+                <h3>Development</h3>
                 <p>
-                  Реализация функционала проекта согласно техническому заданию.
+                  Implementing project functionality according to the technical
+                  requirements.
                 </p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
@@ -398,8 +401,8 @@
                 ></dotlottie-player>
               </li>
               <li>
-                <h3>Тестирование</h3>
-                <p>Проверка и тестирование всех функций проекта.</p>
+                <h3>Testing</h3>
+                <p>Checking and testing all project features.</p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
                   type="module"
@@ -415,8 +418,8 @@
                 ></dotlottie-player>
               </li>
               <li>
-                <h3>Запуск</h3>
-                <p>Запуск проекта и передача его заказчику.</p>
+                <h3>Launch</h3>
+                <p>Launching the project and handing it over to the client.</p>
                 <script
                   src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
                   type="module"
@@ -442,96 +445,85 @@
           id="works"
           class="pb-5"
         >
-          НАШИ РАБОТЫ
+          OUR WORKS
         </h2>
         <div class="row justify-content-start">
           <div class="col-lg-4 col-sm-12 works_p">
-            <h3>Система менежмента</h3>
-
+            <h3>Management System</h3>
             <div class="works_img">
               <img
                 src="img/works/template.png"
                 alt=""
               />
             </div>
-
             <div class="bg-element">
               <p>
-                Система менежмента для управления проектами и задачами. Включает
-                в себя функции для планирования, контроля и анализа проектов.
+                A management system for overseeing projects and tasks. Includes
+                planning, monitoring, and analytics features.
               </p>
               <a href="#more"><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-12 works_p">
-            <h3>Система управления</h3>
-
+            <h3>Control System</h3>
             <div class="works_img">
               <img
                 src="img/works/teplate_2.png"
                 alt=""
               />
             </div>
-
             <div class="bg-element">
               <p>
-                Веб-приложение для эффективного управления компанией,
-                позволяющее оптимизировать бизнес-процессы, координировать
-                команды и отслеживать ключевые показатели в реальном времени.
+                A web application for efficient company management, enabling you
+                to optimize business processes, coordinate teams, and track key
+                indicators in real-time.
               </p>
               <a href="#more"><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-12 works_p">
-            <h3>Система Контроля Продукции</h3>
-
+            <h3>Product Control System</h3>
             <div class="works_img">
               <img
                 src="img/works/teplate_3.png"
                 alt=""
               />
             </div>
-
             <div class="bg-element">
               <p>
-                Контроль продукции – система для управления производственными
-                процессами, отслеживания состояния товаров и оптимизации их
-                учета.
+                A solution for managing production processes, monitoring product
+                status, and optimizing product accounting.
               </p>
               <a href="#more"><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-12 works_p">
-            <h3>Онлайн-магазин</h3>
-
+            <h3>Online Store</h3>
             <div class="works_img">
               <img
                 src="img/works/template_2.png"
                 alt=""
               />
             </div>
-
             <div class="bg-element">
               <p>
-                Платформа для удобной покупки товаров и услуг через интернет с
-                доставкой на дом.
+                A platform for convenient online shopping with home delivery.
               </p>
               <a href="#more"><i class="fa fa-link"></i></a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-12 works_p">
-            <h3>Корпоративный сайт</h3>
-
+            <h3>Corporate Website</h3>
             <div class="works_img">
               <img
                 src="img/works/Шаблон.png"
                 alt=""
               />
             </div>
-
             <div class="bg-element">
               <p>
-                Корпоративный сайт для представления компании, услуг и продукции
+                A corporate website to present a company, its services, and
+                products.
               </p>
               <a href="#more"><i class="fa fa-link"></i></a>
             </div>
@@ -543,7 +535,7 @@
       class="feedback"
       id="feedback"
     >
-      <h2 class="text-center mb-4">Обратная связь</h2>
+      <h2 class="text-center mb-4">Feedback</h2>
       <div class="container">
         <form
           id="contact-form"
@@ -556,14 +548,14 @@
                   <label
                     for="name"
                     class="form-label text-white"
-                    >Имя:</label
+                    >Name:</label
                   >
                   <input
                     type="text"
                     class="form-control form-control-lg"
                     id="name"
                     name="name"
-                    placeholder="Ваше имя"
+                    placeholder="Your name"
                     required
                   />
                 </div>
@@ -572,7 +564,7 @@
                   <label
                     for="phone"
                     class="form-label text-white"
-                    >Телефон:</label
+                    >Phone:</label
                   >
                   <input
                     type="tel"
@@ -604,7 +596,7 @@
                 type="submit"
                 class="btn btn-dark btn-lg w-100 mt-3 fb_btn"
               >
-                УЗНАТЬ ЦЕНЫ
+                GET A QUOTE
               </button>
             </div>
           </div>
@@ -615,7 +607,7 @@
     <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row align-items-center text-center text-md-start">
-          <!-- Логотип -->
+          <!-- Logo -->
           <div class="col-md-4 mb-3 mb-md-0">
             <img
               src="img/logos/black white Thunder logo.png"
@@ -624,7 +616,7 @@
             />
           </div>
 
-          <!-- Контакты -->
+          <!-- Contacts -->
           <div class="col-md-4 justify-content-center d-flex">
             <a
               href="mailto:webnovauz@gmail.com"
@@ -641,13 +633,13 @@
             </a>
           </div>
 
-          <!-- Кнопка "Наверх" -->
+          <!-- Scroll to top button -->
           <div class="col-md-4 text-md-end mt-3 mt-md-0">
             <button
               id="scrollToTop"
               class="btn btn-outline-light"
             >
-              <i class="fas fa-arrow-up"></i> Наверх
+              <i class="fas fa-arrow-up"></i> Top
             </button>
           </div>
         </div>
@@ -664,8 +656,6 @@
       src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
       type="module"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="js/eng.js"></script>
   </body>
 </html>
-
-<!-- //менежмент система, кастомер сервис, post системы , онлайн-магазинов -->

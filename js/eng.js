@@ -2,23 +2,22 @@ particlesJS.load('particles-js', './js/particlesjs-config.json', function () {
   console.log('Particles.js config loaded');
 });
 
-const text = "МЫ СОЗДАЁМ ЦИФРОВЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА {...}";
 
-let i = 0; 
+
+const textEng = "WE CREATE DIGITAL SOLUTIONS FOR YOUR BUSINESS {...}";
+let j = 0; 
 const typingSpeed = 50;
 
-function typeEffect() {
-  const typewriterElement = document.getElementById("typewriter-text");
-  if (i < text.length) {
-    typewriterElement.textContent += text.charAt(i); 
-    i++;
-    setTimeout(typeEffect, typingSpeed);
+function typeEffect2() {
+  const typewriterElement2 = document.getElementById("typewriter-text2");
+  if (j < textEng.length) {
+    typewriterElement2.textContent += textEng.charAt(j); 
+    j++;
+    setTimeout(typeEffect2, typingSpeed);
   }
 }
-
-
 window.onload = () => {
-  typeEffect();
+  typeEffect2();
 };
 
 
