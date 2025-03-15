@@ -1,21 +1,30 @@
-// server.js
 const express = require('express');
-const fetch = require('node-fetch'); // Если используете Node.js < 18
 const bodyParser = require('body-parser');
-require('dotenv').config(); // Чтобы считывать токен из .env
+const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Эти переменные можете хранить в .env
-const BOT_TOKEN = process.env.BOT_TOKEN; // "123456789:ABCDef..."
-const CHAT_ID = process.env.CHAT_ID; // "123456789" или "-10012123123" для каналов
+// ✅ Разрешаем CORS вручную
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 
-app.use(express.static(__dirname));
-app.use(bodyParser.json());
+// ✅ Разрешаем preflight-запросы
+app.options('*', (req, res) => {
+  res.sendStatus(200);
+});
+
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// При отправке формы POST на /send -> шлём запрос к Telegram
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const CHAT_ID = process.env.CHAT_ID;
+
 app.post('/send', async (req, res) => {
   try {
     const { name, phone, email } = req.body;
@@ -24,15 +33,9 @@ app.post('/send', async (req, res) => {
 <b>Phone:</b> ${phone}
 <b>Email:</b> ${email}`;
 
-    // Вызываем Telegram Bot API
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-    const params = {
-      chat_id: CHAT_ID,
-      text: text,
-      parse_mode: 'HTML',
-    };
+    const params = { chat_id: CHAT_ID, text: text, parse_mode: 'HTML' };
 
-    // Отправляем POST-запрос к Telegram
     const tgRes = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -43,15 +46,14 @@ app.post('/send', async (req, res) => {
       throw new Error(`Telegram API error: ${tgRes.status}`);
     }
 
-    // Успех
-    res.status(200).send('OK');
+    res.status(200).json({ message: 'Заявка успешно отправлена!' });
   } catch (err) {
     console.error(err);
     res.status(500).send('Error sending Telegram message');
   }
 });
 
-// Запускаем сервер
+// ✅ Запуск сервера
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
