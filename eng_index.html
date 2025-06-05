@@ -84,6 +84,31 @@
       .connection-card.animated-bg .text-secondary {
         color: #e0e0e0 !important;
       }
+      @media (max-width: 767.98px) {
+        .connections .row.g-4 {
+          gap: 1.5rem 0 !important;
+        }
+        .connection-card.animated-bg {
+          min-width: 0 !important;
+          width: 100% !important;
+          margin-bottom: 1.5rem;
+          padding: 1.5rem 1rem !important;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .connections .row.g-4 > [class*='col-'] {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 1.5rem;
+        }
+        .connection-card.animated-bg {
+          font-size: 1rem;
+          padding: 1.2rem 0.7rem !important;
+        }
+        .connections h2 {
+          font-size: 1.3rem !important;
+        }
+      }
     </style>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 
@@ -527,80 +552,6 @@
         </div>
       </div>
     </section>
-    <section
-      class="feedback"
-      id="feedback"
-    >
-      <h2 class="text-center mb-4">Feedback</h2>
-      <div class="container">
-        <form
-          id="contact-form"
-          class="feedback-form"
-          action="/send"
-          method="POST"
-        >
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="row">
-                <div class="mb-3 col-lg-4 col-sm-12">
-                  <label
-                    for="name"
-                    class="form-label text-white"
-                    >Name:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control form-control-lg"
-                    id="name"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3 col-lg-4 col-sm-12">
-                  <label
-                    for="phone"
-                    class="form-label text-white"
-                    >Phone:</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control form-control-lg"
-                    id="phone"
-                    name="phone"
-                    placeholder="+998 (99) 123-45-67"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3 col-lg-4 col-sm-12">
-                  <label
-                    for="email"
-                    class="form-label text-white"
-                    >Email:</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control form-control-lg"
-                    id="email"
-                    name="email"
-                    placeholder="example@mail.com"
-                    required
-                  />
-                </div>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-dark btn-lg w-100 mt-3 fb_btn"
-              >
-                GET A QUOTE
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
 
     <section
       class="connections py-5"
@@ -688,6 +639,80 @@
             >Fast connection & integration with your business systems</span
           >
         </div>
+      </div>
+    </section>
+    <section
+      class="feedback"
+      id="feedback"
+    >
+      <h2 class="text-center mb-4">Feedback</h2>
+      <div class="container">
+        <form
+          id="contact-form"
+          class="feedback-form"
+          action="/send"
+          method="POST"
+        >
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="mb-3 col-lg-4 col-sm-12">
+                  <label
+                    for="name"
+                    class="form-label text-white"
+                    >Name:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3 col-lg-4 col-sm-12">
+                  <label
+                    for="phone"
+                    class="form-label text-white"
+                    >Phone:</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control form-control-lg"
+                    id="phone"
+                    name="phone"
+                    placeholder="+998 (99) 123-45-67"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3 col-lg-4 col-sm-12">
+                  <label
+                    for="email"
+                    class="form-label text-white"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="email"
+                    name="email"
+                    placeholder="example@mail.com"
+                    required
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-dark btn-lg w-100 mt-3 fb_btn"
+              >
+                GET A QUOTE
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
