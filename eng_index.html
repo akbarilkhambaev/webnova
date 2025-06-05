@@ -50,6 +50,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <style>
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
       .lottie {
         position: absolute;
         top: -120px;
@@ -58,6 +69,20 @@
       }
       .dropdown-menu {
         z-index: 9999; /* High enough to be above .lottie */
+      }
+      .connection-card.animated-bg {
+        background: linear-gradient(135deg, #232526, #414345, #0f2027, #232526);
+        background-size: 400% 400%;
+        animation: gradientBG 8s ease-in-out infinite;
+        color: #fff;
+        border: none;
+      }
+      .connection-card.animated-bg .fw-bold {
+        color: #fff !important;
+        text-shadow: 0 1px 8px #0008;
+      }
+      .connection-card.animated-bg .text-secondary {
+        color: #e0e0e0 !important;
       }
     </style>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
@@ -574,6 +599,95 @@
             </div>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section
+      class="connections py-5"
+      style="background: linear-gradient(90deg, #40e0d0 0%, #0f2027 100%)"
+    >
+      <div class="container">
+        <h2
+          class="text-center text-white mb-4"
+          style="letter-spacing: 2px; font-weight: 700"
+        >
+          Integrations & Connections
+        </h2>
+        <div class="row justify-content-center align-items-stretch g-4">
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card text-center p-4 bg-white rounded-4 shadow h-100 d-flex flex-column align-items-center animated-bg"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/billz.png"
+                alt="Billz"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold text-dark mb-1">Billz</div>
+              <div class="text-secondary small">
+                Sales & inventory automation
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card text-center p-4 bg-white rounded-4 shadow h-100 d-flex flex-column align-items-center animated-bg"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/Bitrix24.png"
+                alt="Bitrix24"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold text-dark mb-1">Bitrix24</div>
+              <div class="text-secondary small">CRM & task management</div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card text-center p-4 bg-white rounded-4 shadow h-100 d-flex flex-column align-items-center animated-bg"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/smartapp.png"
+                alt="Smart App"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold text-dark mb-1">Smart App</div>
+              <div class="text-secondary small">Mobile apps & services</div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card text-center p-4 bg-white rounded-4 shadow h-100 d-flex flex-column align-items-center animated-bg"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/sap.png"
+                alt="SAP"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold text-dark mb-1">SAP</div>
+              <div class="text-secondary small">Enterprise solutions</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <span
+            class="badge bg-light text-dark fs-6 shadow-sm px-4 py-2"
+            style="opacity: 0.95"
+            >Fast connection & integration with your business systems</span
+          >
+        </div>
       </div>
     </section>
 

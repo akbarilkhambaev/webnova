@@ -37,9 +37,8 @@ ul li {
 
 section {
   padding-top: 50px !important;
-  margin-top: 50px !important;
+  margin-top: 10px !important;
   padding-bottom: 50px !important;
-  margin-bottom: 50px !important;
 }
 
 input,
@@ -206,8 +205,10 @@ header #typewriter-text2 {
 .about h2,
 .contact h2,
 .how_it_works h2,
-.feedback h2 {
+.feedback h2,
+.connections h2 {
   text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.5);
+  text-transform: uppercase;
 }
 .column-1 {
   animation-delay: 0s;
@@ -240,7 +241,8 @@ header #typewriter-text2 {
 .about h2,
 .contact h2,
 .how_it_works h2,
-.feedback h2 {
+.feedback h2,
+.connections h2 {
   color: #fff;
   font-size: 70px;
   font-weight: bold;

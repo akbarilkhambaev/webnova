@@ -59,6 +59,28 @@
       .dropdown-menu {
         z-index: 9999; /* достаточно, чтобы было поверх .lottie */
       }
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .connection-card.animated-bg {
+        background: linear-gradient(135deg, #232526, #414345, #0f2027, #232526);
+        background-size: 400% 400%;
+        animation: gradientBG 8s ease-in-out infinite;
+        color: #fff;
+        border: none;
+      }
+      .connection-card.animated-bg .fw-bold,
+      .connection-card.animated-bg .text-secondary {
+        color: #fff !important;
+      }
     </style>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 
@@ -505,6 +527,97 @@
           allowtransparency="true"
           loading="lazy"
         ></iframe>
+      </div>
+    </section>
+
+    <section
+      class="connections py-5"
+      style="background: linear-gradient(90deg, #40e0d0 0%, #0f2027 100%)"
+    >
+      <div class="container">
+        <h2
+          class="text-center text-white mb-4"
+          style="letter-spacing: 2px; font-weight: 700"
+        >
+          Интеграции и подключения
+        </h2>
+        <div class="row justify-content-center align-items-stretch g-4">
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card animated-bg text-center p-4 rounded-4 shadow h-100 d-flex flex-column align-items-center"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/billz.png"
+                alt="Billz"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold mb-1">Billz</div>
+              <div class="text-secondary small">
+                Автоматизация продаж и складов
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card animated-bg text-center p-4 rounded-4 shadow h-100 d-flex flex-column align-items-center"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/Bitrix24.png"
+                alt="Bitrix24"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold mb-1">Bitrix24</div>
+              <div class="text-secondary small">CRM и управление задачами</div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card animated-bg text-center p-4 rounded-4 shadow h-100 d-flex flex-column align-items-center"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/smartapp.png"
+                alt="Smart App"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold mb-1">Smart App</div>
+              <div class="text-secondary small">
+                Мобильные приложения и сервисы
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="connection-card animated-bg text-center p-4 rounded-4 shadow h-100 d-flex flex-column align-items-center"
+              style="min-width: 160px"
+            >
+              <img
+                src="/img/integ/sap.png"
+                alt="SAP"
+                style="height: 48px; margin-bottom: 12px"
+              />
+              <div class="fw-bold mb-1">SAP</div>
+              <div class="text-secondary small">Корпоративные решения</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <span
+            class="badge bg-light text-dark fs-6 shadow-sm px-4 py-2"
+            style="opacity: 0.95"
+            >Быстрое подключение и интеграция с вашими бизнес-системами</span
+          >
+        </div>
       </div>
     </section>
     <section
